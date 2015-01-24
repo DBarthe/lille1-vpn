@@ -1,0 +1,7 @@
+[Unit]
+Description=Connect to the vpn of lille1
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/lille1-vpn.sh
