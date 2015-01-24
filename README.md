@@ -13,6 +13,8 @@ $ sudo pacman -S openvpn
 
 Then:
 ```bash
+$ git clone https://github.com/DBarthe/lille1-vpn.git
+$ cd lille1-vpn
 $ sudo ./install.sh
 ```
 
