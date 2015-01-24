@@ -1,10 +1,23 @@
 ## Installation
+
+First, You need openvpn installed.
+
+On Debian/Ubuntu:
+```bash
+$ sudo apt-get install openvpn
+```
+On ArchLinux:
+```bash
+$ sudo pacman -S openvpn
+```
+
+Then:
 ```bash
 $ sudo ./install.sh
 ```
 
 ## Usage
-if you have systemd and have answered 'Y' during the installation :
+if you use systemd and have answered 'Y' during the installation :
 ```bash
 $ sudo systemctl start lille1-vpn
 ```
