@@ -41,8 +41,8 @@ fill_secret_file() {
 
 install_service() {
 
-    read -p "Install systemd service ? (Y/n)" resp
-    if [ "$resp" = "" ] || [ "$resp" = 'Y' ] || [ "$resp" = 'y' ];
+    read -p "Install systemd service (for advanced users) ? (y/N)" resp
+    if [ "$resp" = 'Y' ] || [ "$resp" = 'y' ];
     then
 	install -m644 lille1-vpn.service /usr/lib/systemd/system
     fi
@@ -57,8 +57,8 @@ read_user && \
 
 if [ $? -eq 0 ]; then
     echo
-    echo "Thanks to have successfully installed me ;)"
-    echo "If you have installed systemd service, you could now run 'systemctl enable lille1-vpn' for example."
+    echo "Thanks to install lille1-vpn :)"
+    echo "Now execute 'sudo lille1-vpn.sh' to get connected to the VPN."
 else
     echo "Sorry, an error occurs during installation."
 fi

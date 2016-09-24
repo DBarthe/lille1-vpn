@@ -19,12 +19,7 @@ $ sudo ./install.sh
 ```
 
 ## Usage
-if you use systemd and have answered 'Y' during the installation :
-```bash
-$ sudo systemctl start lille1-vpn
-```
-
-else, keep running that in a terminal :
+Keep running that in a terminal :
 ```bash
 $ sudo lille1-vpn.sh
 ```
@@ -34,4 +29,9 @@ or in background with :
 $ sudo lille1-vpn.sh > /dev/null &
 ```
 
-You are now able to access various lille1 services such as ftp, webtp, intranet, ...
+or if you use systemd and have answered 'Y' during the installation :
+```bash
+$ sudo systemctl start lille1-vpn
+```
+
+You are now able to access various lille1 services such as ftp, webtp, prof, intranet, ...
