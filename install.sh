@@ -44,7 +44,8 @@ install_service() {
     read -p "Install systemd service (for advanced users) ? (y/N)" resp
     if [ "$resp" = 'Y' ] || [ "$resp" = 'y' ];
     then
-	install -m644 lille1-vpn.service /usr/lib/systemd/system
+	install -m755 -d /usr/local/lib/systemd/system
+	install -m644 lille1-vpn.service /usr/local/lib/systemd/system/
     fi
 }
 
